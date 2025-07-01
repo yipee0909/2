@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Par Perfeito</title>
+  <link rel="icon" href="logo303 (1).png" type="image/png">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #fdf1f5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    .container {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      padding: 32px 24px 64px;
+      max-width: 700px;
+      width: 100%;
+      text-align: center;
+      position: relative;
+    }
+
+    .logo {
+      width: 64px;
+      height: auto;
+      margin-bottom: 16px;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #cc3366;
+    }
+
+    .intro-copy {
+      font-size: 16px;
+      color: #333;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .video-wrapper {
+      max-width: 100%;
+      width: 100%;
+      max-width: 360px;
+      margin: 0 auto;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(204, 51, 102, 0.2);
+      overflow: hidden;
+    }
+
+    wistia-player {
+      width: 100% !important;
+      height: auto !important;
+      display: block;
+    }
+
+    .cta-button {
+    display: inline-block;
+    margin-top: 32px;
+    padding: 20px 32px;     /* aumento do tamanho do botão */
+    background-color: #ff4da6;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 12px;
+    font-size: 16px;        /* texto maior */
+    font-weight: bold;
+    animation: pulsePink 1.2s infinite;
+    display: none;
+    text-transform: uppercase;  /* texto em maiúsculas */
+    }
+
+
+    .cta-button.highlight {
+      background: linear-gradient(90deg, #ff66b2, #cc0066);
+      color: white;
+      box-shadow: 0 0 20px #ff99cc;
+      text-shadow: 1px 1px 2px #990033;
+    }
+
+    .cta-button.highlight:hover {
+      background: linear-gradient(90deg, #e6007a, #990033);
+    }
+
+    .copyright {
+      margin-top: 20px;
+      font-size: 12px;
+      color: #999;
+    }
+
+    @keyframes pulsePink {
+      0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255,105,180, 0.7); }
+      70% { transform: scale(1.05); box-shadow: 0 0 15px 10px rgba(255,105,180, 0); }
+      100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255,105,180, 0); }
+    }
+  </style>
+  <script src="https://fast.wistia.com/player.js" async></script>
+  <script src="https://fast.wistia.com/embed/q5706cuso5.js" async type="module"></script>
+  <style>
+    wistia-player[media-id='q5706cuso5']:not(:defined) {
+      background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/q5706cuso5/swatch');
+      display: block;
+      filter: blur(5px);
+      padding-top: 56.25%;
+    }
+  </style>
+</head>
+<body>
+  <img src="logo303 (1).png" alt="Par Perfeito Logo" class="logo">
+
+  <div class="container">
+    <h2><strong>🔥 A VERDADE CRUA: Antes Ignoradas, Hoje São Desejadas!!! 🔥</strong></h2>
+    <p class="intro-copy">
+      Dormir com um estranho ao lado, chorar em silêncio no banheiro...
+    </p>
+    <p class="intro-copy">Essa chance <span style="color:#cc0033; font-weight: bold;">não vai ficar disponível</span> por muito tempo.</p>
+    <p class="intro-copy">O que você vai ver aqui vai <span style="color:#cc0033; font-weight: bold;">salvar seu relacionamento</span>!</p>
+
+    <div class="video-wrapper">
+      <wistia-player media-id="q5706cuso5" aspect="0.5625"></wistia-player>
+    </div>
+
+    <a href="https://seu-site.com/oferta-final" class="cta-button highlight" id="ctaBtn">
+      💖 Quero dar o primeiro passo
+    </a>
+  </div>
+
+  <div class="copyright">© 2025 Par Perfeito. Todos os direitos reservados.</div>
+
+  <script>
+    // Exibe o botão após 40 segundos (6s antes do vídeo acabar)
+    setTimeout(() => {
+      document.getElementById("ctaBtn").style.display = "inline-block";
+    }, 40000);
+  </script>
+</body>
+</html>
